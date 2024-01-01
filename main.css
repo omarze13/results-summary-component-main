@@ -22,7 +22,7 @@
     /*  Main Values  */
     --main-padding: 20px;
     --main-margin: 20px;
-    --main-border-radius: 20px;
+    --main-border-radius: 30px;
 }
 body{
     font-size: 18px;
@@ -81,7 +81,7 @@ a{
         grid-template-rows: 500px;
         grid-template-columns: 1fr 1fr;
         border-radius: var(--main-border-radius);
-        box-shadow: 10px 10px 10px var(--Pale-blue);
+        box-shadow: 15px 15px 40px var(--Pale-blue);
         height: fit-content;
     }
 }
@@ -107,7 +107,7 @@ a{
 }
 .summary .left-card h3{
     color: var(--Light-lavender);
-    margin: 40px 0 var(--main-margin);
+    margin: 40px 0 40px;
 
 }
 .summary .left-card .circle{
@@ -120,6 +120,13 @@ a{
     align-items: center;
     flex-direction: column;
     margin: 0 0 var(--main-margin);
+}
+
+@media (min-width: 1024px) {
+    .summary .left-card .circle {
+        width: 200px;
+        height: 200px;
+    }
 }
 .summary .left-card .circle .score{
     font-size: 76px;
